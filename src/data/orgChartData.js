@@ -1,12 +1,12 @@
 // src/data/orgChartData.js
 
 import { governmentMembers } from './governmentData';
-import { tremereChantry } from './chantryData'; // <-- Create this file
-import { anarchNetwork } from './anarchData';       // <-- Create this file
+import { tremereChantry } from './chantryData'; 
+import { anarchNetwork } from './anarchData';       
 
 export const orgCharts = {
   government: {
-    label: 'Kindred Government',
+    label: 'Camarilla Government',
     data: governmentMembers,
   },
   camarilla: {
