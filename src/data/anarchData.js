@@ -1,5 +1,5 @@
-// src/data/governmentData.js
-export const governmentMembers = [
+// src/data/anarchData.js
+export const anarchNetwork = [
   {
     id: 'prince-jackson',
     name: 'Prince Jackson',

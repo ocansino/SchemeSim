@@ -1,5 +1,5 @@
-// src/data/governmentData.js
-export const governmentMembers = [
+// src/data/chantryData.js
+export const tremereChantry = [
   {
     id: 'prince-jackson',
     name: 'Prince Jackson',
