@@ -43,7 +43,8 @@ const HierarchyNode = React.forwardRef(({ member, allMembers, onMemberRendered, 
 });
 
 function OrgChart({ data }) {
-  const prince = data.find(member => member.title.includes('Prince'));
+  const root = data.find(member => !member.boss);
+
   const containerRef = useRef(null);
   const svgRef = useRef(null);
   const nodeRefs = useRef({});
@@ -165,9 +166,9 @@ return (
 
       {/* The scaled hierarchy content */}
       <div className="relative flex flex-col items-center w-max mx-auto">
-        {prince && (
+        {root && (
           <HierarchyNode
-            member={prince}
+            member={root}
             allMembers={data}
             onMemberRendered={handleMemberRendered}
             scale={scale}
